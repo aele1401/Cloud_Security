@@ -1,0 +1,42 @@
+# Configure Web VM with Docker and use with ELK instance.
+---
+- name: Config Web VM with Docker
+  hosts: webservers
+  become: true
+  tasks:
+  # Installs docker images
+  - name: docker.io
+    apt:
+      force_apt_get: yes
+      update_cache: yes
+      name: docker.io
+      state: present
+
+  # Installs python module
+  - name: Install pip3
+    apt:
+      force_apt_get: yes
+      name: python3-pip
+      state: present
+
+  # Installs docker python module
+  - name: Install Docker python module
+    pip:
+      name: docker
+      state: present
+
+  # Download and launch docker container
+  # Note: Here you will download and launch your own docker container. cyberxsecurity/dvwa is just an example.
+  - name: download and launch a docker web container
+    docker_container:
+      # Enter the name and image of your container below.
+      name: dvwa
+      image: cyberxsecurity/dvwa
+      state: started
+      published_ports: 80:80
+
+#  Enable docker service
+  - name: Enable docker service
+    systemd:
+      name: docker
+      enabled: yes

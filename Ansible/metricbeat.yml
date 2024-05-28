@@ -1,0 +1,32 @@
+---
+# Playbook installs, launches, and enables metricbeat to help monitor changes to system metrics and logs.
+# This beat can be used with an ELK instance.
+- name: Installing and Launching Metricbeat
+  hosts: webservers
+  become: true
+  tasks:
+    # Use curl module to download latest version of metricbeat
+  - name: Download metricbeat
+    command: curl -L -O https://artifacts.elastic.co/downloads/beats/metricbeat/metricbeat-7.15.0-amd64.deb
+
+    # Use dkpg command module to install metricbeat
+  - name: install metricbeat
+    command: dpkg -i metricbeat-7.15.0-amd64.deb
+
+    # Use copy module to copy and drop metricbeat from ansible into metricbeat configuration
+  - name: drop in metricbeat config
+    copy:
+      src: /etc/ansible/files/metricbeat-config.yml
+      dest: /etc/metricbeat/metricbeat.yml
+
+    # Use enable & configure command module to enable and configure metricbeat.
+  - name: enable and configure docker module for metric beat
+    command: metricbeat modules enable docker
+
+    # Use setup command module to setup metricbeat
+  - name: setup metric beat
+    command: metricbeat setup
+
+    # Use start command module to start metricbeat service
+  - name: start metric beat
+    command: service metricbeat start

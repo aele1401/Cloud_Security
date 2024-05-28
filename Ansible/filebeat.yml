@@ -1,0 +1,37 @@
+---
+# Playbook file automates the installation, launching, and enabling of filebeat
+- name: Installing and Launching Filebeat
+  hosts: webservers
+  become: yes
+  tasks:
+    # Use curl module to download latest version of filebeat
+  - name: Download filebeat .deb file
+    command: curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.15.0-amd64.deb
+
+    # Use dkpg module to install filebeat
+  - name: Install filebeat .deb
+    command: dpkg -i filebeat-7.15.0-amd64.deb
+
+    # Use copy module to copy and drop filebeat yaml file from ansible into filebeat configuration
+  - name: Drop in filebeat.yml
+    copy:
+      src: /etc/ansible/filebeat-config.yml
+      dest: /etc/filebeat/filebeat.yml
+
+    # Use enable module to enable filebeat to system
+  - name: Enable and Configure System Module
+    command: filebeat modules enable system
+
+    # Use setup module to setup filebeat
+  - name: Setup filebeat
+    command: filebeat setup
+
+    # Use start module to start filebeat service
+  - name: Start filebeat service
+    command: service filebeat start
+
+    # Use systemd module to enable filebeat upon boot
+  - name: Enable service filebeat on boot
+    systemd:
+      name: filebeat
+      enabled: yes
