@@ -22,11 +22,11 @@ Prerequisites:
 - Python
 
 ### Installation 
-1.  Clone repository:
-2.  Navigate to project directory:
-3.  Install dependencies:
+1.  Clone repository: `git clone /Cloud_Security`
+2.  Navigate to project directory: `cd Ansible/`
+3.  Install dependencies: `sudo apt-get update` and `sudo apt-get upgrade`
 
-## Usage
+## Usage & Deployment
 ### Deployment Instructions - Automated ELK Stack Deployment
 An ELK Stack is a collection of open-source tools that is used for data and log analysis, collection, and visualization. 
 ELK is comprised of:
