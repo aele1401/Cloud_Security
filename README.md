@@ -10,7 +10,8 @@ This repository contains my Cloud Security project which features the design of 
 - Comprehensive logging and monitoring
 
 ## Automated ELK Stack Architecture
-![Diagram](https://github.com/aele1401/Cloud/blob/master/ELK/Diagrams/ELK_NET_Diagram.PNG)
+The files in this repository were used to configure the network depicted below.
+![Diagram](https://github.com/aele1401/Cloud_Security/blob/main/Images/ELK_NET_Diagram.PNG)
 
 ## Getting Started
 Prerequisites:
@@ -36,11 +37,7 @@ ELK is comprised of:
 
 ELK can be used with SIEM systems to collect system logs and metrics aggregating the data into an integrated environment which can be used to analyze and visualize the data for application and infrastructure monitoring, faster troubleshooting, and security analytics. It can support threat detection and engineering to help develop custom detections tailored to the security environment of a business that helps create a “less detection that are more effective” SOC environment while reducing the amounts of false positives. These tools combined can help protect a business and help build a secure environment for business operations.
 
-The files in this repository were used to configure the network depicted below.
-
-![Diagram](https://github.com/aele1401/Cloud/blob/master/ELK/Diagrams/ELK_NET_Diagram.PNG)
-
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above or portions of the deployment. Alternatively, select portions of the playbook file may be used to install only certain pieces of it, such as Filebeat.
+The files in this repo have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above or portions of the deployment. Alternatively, select portions of the playbook file may be used to install only certain pieces of it, such as Filebeat.
 
 This document contains the following details:
 * Description of the Topology
@@ -93,7 +90,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![Docker Diagram](https://github.com/aele1401/Cloud/blob/master/ELK/Diagrams/dockerps.PNG)
+![Docker Diagram](https://github.com/aele1401/Cloud_Security/blob/main/Images/dockerps.PNG)
 
 ## Target Machines & Beats
 This ELK server is configured to monitor the following machines:
