@@ -7,6 +7,7 @@ This repository contains my Cloud Security project which features the design of 
 - Automated ELK stack deployment
 - Configurable for different environments
 - Scalable and resilient architecture
+- Analyze and visualize data for application and infrastructure monitoring, faster troubleshooting, and security analytics
 - Comprehensive logging and monitoring
 
 ## Automated ELK Stack Architecture
