@@ -32,11 +32,11 @@ Prerequisites:
 ### Deployment Instructions - Automated ELK Stack Deployment
 An ELK Stack is a collection of open-source tools that is used for data and log analysis, collection, and visualization. 
 ELK is comprised of:
-* Elasticsearch is distributed search and analytics engine that supports many languages.
+* Elasticsearch, a distributed search and analytics engine that supports many languages.
 * Logstash, an open-source data ingesting and processing tool that collects data from various resources, processes the data, and transmits the data to a defined destination.
-* Kibana, data visualization and exploration tool used for analytics, monitoring, and use cases.
+* Kibana, a data visualization and exploration tool used for analytics, monitoring, and use cases.
 
-ELK can be used with SIEM systems to collect system logs and metrics aggregating the data into an integrated environment which can be used to analyze and visualize the data for application and infrastructure monitoring, faster troubleshooting, and security analytics. It can support threat detection and engineering to help develop custom detections tailored to the security environment of a business that helps create a “less detection that are more effective” SOC environment while reducing the amounts of false positives. These tools combined can help protect a business and help build a secure environment for business operations.
+ELK can be used with SIEM systems to collect system logs and metrics aggregating the data into an integrated environment which can be used to analyze and visualize the data for application and infrastructure monitoring, faster troubleshooting, and security analytics. It can support threat detection and engineering to help develop custom detections tailored to the security environment of a business that helps create a “less detection, more effective” SOC environment while reducing the amounts of false positives. These tools combined can help protect a business and help build a secure environment for business operations.
 
 The files in this repo have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above or portions of the deployment. Alternatively, select portions of the playbook file may be used to install only certain pieces of it, such as Filebeat.
 
