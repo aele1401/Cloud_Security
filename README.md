@@ -67,7 +67,7 @@ The configuration details of each machine may be found below.
 | Web 3    |App Server    | 10.1.0.12      | Linux            |
 | ELK      |ELK Server    | 192.168.1.100  | Linux            |
 
-## Access Policies
+## Access Policies & Firewall Rules
 
 The machines on the internal network are not exposed to the public internet. Only the Jump Box and ELK machines can accept connections from the internet. Access to these machine are only allowed from specific IP addresses that are whitelisted. Machines within the internal network can only be accessed by web servers.
 
@@ -79,7 +79,7 @@ A summary of the access policies in place can be found in the table below.
 | ELK      | Yes                 | Local machine IP     |
 | Web VMs  | No                  | 192.168.1.100        |
 
-## ELK Configuration
+## ELK Configuration & Automation w/ Ansible
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because it automates manual tasks.
 
