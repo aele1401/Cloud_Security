@@ -67,7 +67,7 @@ The configuration details of each machine may be found below.
 | Web 3    |App Server    | 10.1.0.12      | Linux            |
 | ELK      |ELK Server    | 192.168.1.100  | Linux            |
 
-## Access Policies & Firewall Rules
+## Access Policies, Firewall Rules, and Network Security Groups
 
 The machines on the internal network are not exposed to the public internet. Only the Jump Box and ELK machines can accept connections from the internet. Access to these machine are only allowed from specific IP addresses that are whitelisted. Machines within the internal network can only be accessed by web servers.
 
