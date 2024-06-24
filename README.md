@@ -26,7 +26,7 @@ Prerequisites:
 ### Installation 
 1.  Clone repository: `git clone https://github.com/aele1401/Cloud_Security.git`
 2.  Navigate to project directory: `cd c:/users/[your username]/Cloud_Security`
-3.  Install dependencies: `sudo apt-get update` and `sudo apt-get upgrade`
+3.  Install Linux updates and upgrades: `sudo apt-get update` and `sudo apt-get upgrade`
 
 ## Usage & Deployment
 ### Deployment Instructions - Automated ELK Stack Deployment
