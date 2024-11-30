@@ -6,11 +6,11 @@
   tasks:
     # Use curl module to download latest version of filebeat
   - name: Download filebeat .deb file
-    command: curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.15.0-amd64.deb
+    command: curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-8.16.1-amd64.deb
 
     # Use dkpg module to install filebeat
   - name: Install filebeat .deb
-    command: dpkg -i filebeat-7.15.0-amd64.deb
+    command: dpkg -i filebeat-8.16.1-amd64.deb
 
     # Use copy module to copy and drop filebeat yaml file from ansible into filebeat configuration
   - name: Drop in filebeat.yml
