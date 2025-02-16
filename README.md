@@ -12,6 +12,7 @@ This repository contains my Cloud Security project which features the design of 
 
 ## Automated ELK Stack Architecture
 The files in this repository were used to configure the network depicted below.
+
 ![Diagram](https://github.com/aele1401/Cloud_Security/blob/main/Images/ELK_NET_Diagram.PNG)
 
 ## Getting Started
@@ -36,7 +37,7 @@ ELK is comprised of:
 * Logstash, an open-source data ingesting and processing tool that collects data from various resources, processes the data, and transmits the data to a defined destination.
 * Kibana, a data visualization and exploration tool used for analytics, monitoring, and use cases.
 
-ELK can be used as a SIEM system or Elasticsearch and Logstash can be used with other SIEM systems to collect system logs and metrics aggregating the data into an integrated environment for centralized log management which can be used to analyze and visualize the data for application and infrastructure monitoring, faster troubleshooting, and security analytics. It can support threat detection and engineering to help develop custom detections tailored to the security environment of a business that helps create a “less detection, more effective” SOC environment while reducing the amounts of false positives. These tools combined can help protect a business and help build a secure environment for business operations.
+ELK can be used as a SIEM system or Elasticsearch and Logstash can be used with other SIEM systems to collect system logs and metrics aggregating the data into an integrated environment for centralized log management which can be used to analyze and visualize the data for application and infrastructure monitoring, faster troubleshooting, and security analytics. It can support threat detection and engineering to help develop custom detections tailored to the security environment and threat landscape of an organization that helps create a “less detection, more effective” SOC environment while reducing the amounts of false positives. These tools combined can help protect an organization and help build a secure environment for business operations.
 
 The files in this repo have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above or portions of the deployment. Alternatively, select portions of the playbook file may be used to install only certain pieces of it, such as Filebeat.
 
@@ -51,11 +52,9 @@ This document contains the following details:
 
 ## Description of the Topology
 
-The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, a Vulnerable Web Application.
-
-Load balancing ensures that the application will be highly available, in addition to optimizing resources and response.
-
-Integrating an ELK server allows administrators to easily monitor the vulnerable virtual machines for changes to the log files and system metrics.
+- The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, a Vulnerable Web Application.
+- Load balancing ensures that the application will be highly available, in addition to optimizing resources and response.
+- Integrating an ELK server allows administrators to easily monitor the vulnerable virtual machines for changes to the log files and system metrics.
 
 The configuration details of each machine may be found below.
 
