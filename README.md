@@ -54,6 +54,9 @@ This document contains the following details:
 
 - The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, a Vulnerable Web Application.
 - Load balancing ensures that the application will be highly available, in addition to optimizing resources and response.
+
+![Diagram](https://github.com/aele1401/Cloud_Security/blob/main/Images/LB_Diagram.PNG)
+
 - Integrating an ELK server allows administrators to easily monitor the vulnerable virtual machines for changes to the log files and system metrics.
 
 The configuration details of each machine may be found below.
