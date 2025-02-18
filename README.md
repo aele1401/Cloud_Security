@@ -59,6 +59,8 @@ This document contains the following details:
 
 - Integrating an ELK server allows administrators to easily monitor the vulnerable virtual machines for changes to the log files and system metrics.
 
+![Diagram](https://github.com/aele1401/Cloud_Security/blob/main/Images/ELK_Server.png)
+
 The configuration details of each machine may be found below.
 
 | Name     | Function     | IP Address     | Operating System |
