@@ -74,8 +74,8 @@ The configuration details of each machine may be found below.
 ## Access Policies, Firewall Rules, and Network Security Groups
 
 The machines on the internal network are not exposed to the public internet. Only the Jump Box and ELK machines can accept connections from the internet. Access to these machine are only allowed from specific IP addresses that are whitelisted. Machines within the internal network can only be accessed by web servers.
-
-A summary of the access policies in place can be found in the table below.
+- A summary of the access policies in place can be found in the table below.
+- Network Security Group configuration:
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
